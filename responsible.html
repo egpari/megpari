@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#0f0f12">
+    
+    <title>اللعب بمسؤولية | Megapari Egypt | أدوات الحماية والتحكم</title>
+    <meta name="description" content="دليل اللعب بمسؤولية في ميجاباري. تعرف على أدوات التحكم في الميزانية، الإقصاء الذاتي، وكيفية حماية حسابك من الإدمان. سلامتك أولويتنا.">
+    <meta name="keywords" content="اللعب بمسؤولية, ادمان المراهنات, حظر حساب 1xbet, الغاء حساب megapari, self exclusion, علاج القمار, حدود الايداع, المقامرة المسؤولة, GamCare Egypt">
+
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #00e676;       /* Safe Green */
+            --accent: #00f0ff;
+            --brand-red: #ff0055;
+            --gold: #ffd700;
+            --bg-dark: #0a0a0c;
+            --card-bg: #141418;
+            --border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        * { box-sizing: border-box; outline: none; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            background-color: var(--bg-dark);
+            color: #fff;
+            font-family: 'Tajawal', sans-serif;
+            margin: 0; padding: 0;
+            padding-bottom: 100px;
+            background-image: radial-gradient(circle at 50% 0%, #051a10 0%, #000 100%); /* Greenish tint for safety vibe */
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        img { max-width: 100%; display: block; }
+
+        /* --- HEADER --- */
+        .nav-top {
+            background: rgba(15, 15, 20, 0.95); border-bottom: var(--border);
+            padding: 15px 20px; position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(10px);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo { font-size: 1.5rem; font-weight: 900; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .logo span { color: var(--primary); }
+        .home-btn { font-size: 0.9rem; color: #aaa; border: 1px solid #333; padding: 5px 15px; border-radius: 20px; display: flex; align-items: center; gap: 5px; }
+        .home-btn:hover { background: #333; color: #fff; }
+
+        /* --- HERO --- */
+        .safe-hero {
+            text-align: center; padding: 50px 20px;
+            border-bottom: 1px solid #333;
+        }
+        .hero-icon { font-size: 4rem; color: var(--primary); margin-bottom: 20px; animation: float 3s infinite; text-shadow: 0 0 30px rgba(0, 230, 118, 0.3); }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        h1 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; }
+        .subtitle { color: #aaa; max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 1.6; }
+
+        /* --- RULES GRID --- */
+        .rules-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px; margin-top: 40px;
+        }
+        .rule-card {
+            background: var(--card-bg); border: var(--border); border-radius: 15px;
+            padding: 25px; transition: 0.3s; position: relative; overflow: hidden;
+            border-top: 4px solid var(--primary);
+        }
+        .rule-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0, 230, 118, 0.1); }
+        .r-icon { font-size: 2rem; margin-bottom: 15px; color: var(--primary); }
+        .r-title { font-weight: bold; font-size: 1.1rem; margin-bottom: 10px; color: #fff; }
+        .r-desc { font-size: 0.9rem; color: #aaa; line-height: 1.6; }
+
+        /* --- WARNING SECTION (Red) --- */
+        .warning-section {
+            background: linear-gradient(135deg, #1a0505, #000); border: 1px solid #ff3b30;
+            border-radius: 20px; padding: 30px; margin: 50px 0;
+        }
+        .warning-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+        .warning-header i { font-size: 2rem; color: #ff3b30; }
+        .warning-header h2 { margin: 0; color: #ff3b30; font-size: 1.5rem; }
+        
+        .check-list { list-style: none; padding: 0; }
+        .check-list li { margin-bottom: 10px; color: #ccc; display: flex; gap: 10px; align-items: flex-start; }
+        .check-list li i { color: #ff3b30; margin-top: 5px; }
+
+        /* --- TOOLS & APP CTA --- */
+        .tools-box {
+            background: #111; padding: 30px; border-radius: 15px; border: 1px solid #222; margin-bottom: 30px;
+        }
+        .tools-box h2 { color: var(--accent); margin-top: 0; }
+        
+        .app-cta {
+            background: linear-gradient(90deg, #0d1f16, #000); border: 1px dashed var(--primary);
+            padding: 20px; border-radius: 15px; margin-top: 20px; text-align: center;
+        }
+        .cta-btn {
+            background: var(--primary); color: #000; padding: 10px 30px; border-radius: 30px;
+            font-weight: 800; font-size: 0.9rem; margin-top: 15px; display: inline-block; cursor: pointer;
+            transition: 0.3s; text-decoration: none;
+        }
+        .cta-btn:hover { transform: scale(1.05); box-shadow: 0 0 15px rgba(0, 230, 118, 0.4); }
+
+        /* --- HELPLINE CARDS --- */
+        .help-grid { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px; }
+        .help-item { flex: 1; min-width: 200px; background: #1f1f25; padding: 15px; border-radius: 10px; text-align: center; border: 1px solid #333; }
+        .help-item h4 { margin: 0 0 5px; color: #fff; }
+        .help-item a { color: var(--accent); font-size: 0.9rem; text-decoration: underline; }
+
+        /* --- SEO FOOTER --- */
+        .seo-footer { background: #050505; border-top: 1px solid #222; padding: 40px 20px; margin-top: 60px; }
+        .kw-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .kw-tag { font-size: 0.8rem; color: #666; background: #1a1a20; padding: 5px 10px; border-radius: 5px; border: 1px solid #222; }
+
+        /* --- STICKY BAR --- */
+        .sticky-bar {
+            position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%);
+            width: 95%; max-width: 500px; background: rgba(20, 20, 25, 0.95);
+            backdrop-filter: blur(15px); padding: 8px; border-radius: 50px;
+            display: flex; gap: 8px; border: 1px solid rgba(255,255,255,0.15);
+            z-index: 9999; box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+        }
+        .f-btn {
+            flex: 1; height: 45px; border-radius: 25px; font-weight: 700; font-size: 0.9rem;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            cursor: pointer; border: none; color: #fff; transition: 0.2s;
+        }
+        .btn-dl { background: var(--success); color: #000; }
+        .btn-reg { background: var(--brand-red); }
+        .btn-copy { background: #222; border: 1px solid #444; color: var(--gold); max-width: 100px; }
+
+    </style>
+</head>
+<body>
+
+    <nav class="nav-top">
+        <div class="logo">
+            <img src="https://megapari.games/eg/wp-content/uploads/sites/63/2023/05/logo.svg" height="30" alt="Logo">
+            <span style="color:var(--primary); margin-right:5px; font-size:0.8rem;">RESPONSIBLE</span>
+        </div>
+        <a href="index.html" class="home-btn"><i class="fa-solid fa-house"></i> الرئيسية</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="safe-hero">
+            <i class="fa-solid fa-hand-holding-heart hero-icon"></i>
+            <h1>بداية آمنة للعبك على الإنترنت</h1>
+            <p class="subtitle">في MegaPari نضع سلامتك أولًا. اللعب يتطلب وعيًا وحدودًا واضحة لحماية ميزانيتك وصحتك النفسية.</p>
+        </div>
+
+        <div class="rules-grid">
+            <div class="rule-card">
+                <i class="fa-solid fa-sack-dollar r-icon"></i>
+                <div class="r-title">حدد الميزانية</div>
+                <div class="r-desc">ضع مبلغاً ثابتاً للخسارة (وليس للربح) ولا تتجاوزه أبداً تحت أي ظرف.</div>
+            </div>
+            <div class="rule-card">
+                <i class="fa-solid fa-clock r-icon"></i>
+                <div class="r-title">راقب الوقت</div>
+                <div class="r-desc">استخدم المنبه لتحديد جلسة اللعب. لا تدع الوقت يسرقك من حياتك الواقعية.</div>
+            </div>
+            <div class="rule-card">
+                <i class="fa-solid fa-ban r-icon"></i>
+                <div class="r-title">لا تطارد الخسارة</div>
+                <div class="r-desc">محاولة تعويض الخسارة بسرعة هي الطريق الأسرع لخسارة أكبر. تقبل الخسارة كجزء من اللعبة.</div>
+            </div>
+            <div class="rule-card">
+                <i class="fa-solid fa-brain r-icon"></i>
+                <div class="r-title">صفاء الذهن</div>
+                <div class="r-desc">لا تلعب أبداً وأنت تحت تأثير الغضب، الحزن، أو الإرهاق الشديد.</div>
+            </div>
+        </div>
+
+        <div class="warning-section">
+            <div class="warning-header">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <h2>علامات الخطر (هل أنت في مشكلة؟)</h2>
+            </div>
+            <p style="color:#aaa; margin-bottom:20px;">إذا وجدت نفسك تفعل أياً من هذه الأشياء، توقف فوراً واطلب المساعدة:</p>
+            <ul class="check-list">
+                <li><i class="fa-solid fa-xmark"></i> إنفاق مبالغ مالية مخصصة للإيجار أو الطعام على المراهنات.</li>
+                <li><i class="fa-solid fa-xmark"></i> الكذب على العائلة أو الأصدقاء بشأن وقت أو مال اللعب.</li>
+                <li><i class="fa-solid fa-xmark"></i> الشعور بالقلق أو العصبية عند محاولة التوقف عن اللعب.</li>
+                <li><i class="fa-solid fa-xmark"></i> الاقتراض أو بيع الممتلكات لتمويل حسابك.</li>
+                <li><i class="fa-solid fa-xmark"></i> الاعتقاد بأنك تملك "نظاماً" للفوز المؤكد (هذا وهم).</li>
+            </ul>
+        </div>
+
+        <div class="tools-box">
+            <h2>🛠️ خطوات عملية للحماية والتحكم</h2>
+            <p style="color:#ccc;">توفر منصة Megapari أدوات تقنية لمساعدتك على الانضباط. يمكنك تفعيلها من إعدادات الحساب:</p>
+            
+            <ul style="color:#aaa; line-height:1.8;">
+                <li><strong>حدود الإيداع (Deposit Limits):</strong> وضع سقف يومي/أسبوعي للمبالغ التي يمكنك إيداعها.</li>
+                <li><strong>تذكير الوقت (Reality Check):</strong> إشعار يظهر كل ساعة يذكرك بمدة اللعب.</li>
+                <li><strong>الإقصاء الذاتي (Self-Exclusion):</strong> تجميد الحساب تماماً لفترة (أسبوع، شهر، سنة).</li>
+            </ul>
+
+            <div class="app-cta">
+                <i class="fa-brands fa-android" style="font-size:2.5rem; color:var(--primary); margin-bottom:10px;"></i>
+                <h3 style="margin:0; color:#fff;">تحكم في حسابك بشكل أفضل عبر التطبيق</h3>
+                <p style="color:#aaa; font-size:0.9rem;">تطبيق Megapari يتيح لك ضبط حدود الإيداع والإشعارات بسهولة أكبر.</p>
+                <a href="MEGAPARI_App_Download.html" class="cta-btn">تحميل التطبيق وضبط الحدود</a>
+            </div>
+        </div>
+
+        <div class="tools-box" style="border-color:var(--gold);">
+            <h2 style="color:var(--gold);">🔐 كيف تضمن بيئة لعب آمنة؟</h2>
+            <p style="color:#ccc;">اللعب بحساب موثق ومحمي يقلل من التوتر والمشاكل المالية.</p>
+            <ol style="color:#ccc; margin-right:20px; line-height:1.8;">
+                <li>سجل بياناتك الحقيقية فقط (الاسم وتاريخ الميلاد).</li>
+                <li>استخدم كود <strong>EGPARI</strong> عند التسجيل (هذا الكود يربط حسابك بنظام حماية إضافي).</li>
+                <li>قم بتوثيق حسابك (KYC) فوراً لتجنب أي تعليق مستقبلي.</li>
+            </ol>
+            <div style="text-align:center; margin-top:20px;">
+                <button onclick="navigator.clipboard.writeText('EGPARI');alert('تم نسخ الكود!');" class="cta-btn" style="background:var(--gold); color:#000;">نسخ كود الأمان: EGPARI</button>
+            </div>
+        </div>
+
+        <div class="content-section" style="margin-top:40px;">
+            <h3 style="color:#fff; border-right:4px solid var(--primary); padding-right:10px;">جهات دعم عالمية ومحلية</h3>
+            <div class="help-grid">
+                <div class="help-item">
+                    <h4>Gambling Therapy</h4>
+                    <p style="font-size:0.8rem; color:#aaa;">دعم عالمي متعدد اللغات</p>
+                    <a href="https://www.gamblingtherapy.org" target="_blank">زيارة الموقع</a>
+                </div>
+                <div class="help-item">
+                    <h4>GamCare</h4>
+                    <p style="font-size:0.8rem; color:#aaa;">إرشاد ودعم عبر الدردشة</p>
+                    <a href="https://www.gamcare.org.uk" target="_blank">زيارة الموقع</a>
+                </div>
+                <div class="help-item">
+                    <h4>BetBlocker</h4>
+                    <p style="font-size:0.8rem; color:#aaa;">أداة مجانية لحجب المواقع</p>
+                    <a href="https://betblocker.org" target="_blank">تحميل الأداة</a>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:50px; opacity:0.7;">
+            <img src="https://megapari.games/eg/wp-content/uploads/sites/63/2023/05/logo.svg" height="20" style="margin:0 auto 10px; opacity:0.5;">
+            <p style="font-size:0.8rem; color:#666;">
+                الخدمة مخصصة للبالغين 18+ فقط. يُحظر تسجيل القُصّر.<br>
+                استخدم برامج الرقابة الأبوية مثل <strong>Net Nanny</strong> لحماية أطفالك.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="seo-footer">
+        <div class="container">
+            <h4 style="color:#fff;">كلمات بحث ذات صلة:</h4>
+            <div class="kw-tags">
+                <span class="kw-tag">علاج ادمان القمار</span> <span class="kw-tag">حظر حساب 1xbet نهائيا</span> <span class="kw-tag">الغاء اشتراك ميجاباري</span> <span class="kw-tag">مشكلة خسارة الاموال</span> <span class="kw-tag">التحكم في النفس</span> <span class="kw-tag">gambling addiction help</span> <span class="kw-tag">betblocker egypt</span> <span class="kw-tag">حجب مواقع المراهنات</span> <span class="kw-tag">self exclusion form</span> <span class="kw-tag">مسؤولية اللعب</span> <span class="kw-tag">السن القانوني للمراهنات</span> <span class="kw-tag">حماية الرصيد</span>
+            </div>
+            <p style="text-align:center; color:#666; margin-top:30px; font-size:0.8rem;">© 2026 MEGAPARI Security Team. Play Responsibly.</p>
+        </div>
+    </div>
+
+    <div class="sticky-bar">
+        <a href="MEGAPARI_App_Download.html" class="f-btn btn-dl">
+            <i class="fa-brands fa-android"></i> التطبيق
+        </a>
+        <a href="https://refpazitag.top/L?tag=d_2539807m_93399c_EGPARI&site=2539807&ad=93399&r=Registration" class="f-btn btn-reg">
+            <i class="fa-solid fa-user-plus"></i> تسجيل
+        </a>
+        <button onclick="navigator.clipboard.writeText('EGPARI');alert('تم نسخ الكود!');" class="f-btn btn-copy">
+            EGPARI
+        </button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#0f0f12">
+    
+    <title>توثيق الحساب (KYC) ومكافحة غسيل الأموال | Megapari Egypt</title>
+    <meta name="description" content="دليل توثيق حساب Megapari وتفعيل السحب. المستندات المطلوبة (KYC) لضمان أمان حسابك وسرعة المعاملات المالية. سياسة مكافحة غسيل الأموال AML.">
+    <meta name="keywords" content="توثيق حساب megapari, تفعيل حساب 1xbet, حل مشكلة طلب المستندات, رفع الهوية, kyc verification, رفض السحب, مكافحة غسيل الاموال, المستندات المطلوبة, تأكيد الهوية">
+
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #00e676;       /* Verified Green */
+            --accent: #2979ff;        /* ID Blue */
+            --warning: #ffcc00;
+            --danger: #ff3b30;
+            --bg-dark: #0a0a0c;
+            --card-bg: #141418;
+            --border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        * { box-sizing: border-box; outline: none; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            background-color: var(--bg-dark);
+            color: #fff;
+            font-family: 'Tajawal', sans-serif;
+            margin: 0; padding: 0;
+            padding-bottom: 100px;
+            background-image: radial-gradient(circle at 50% 0%, #05101a 0%, #000 100%);
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        img { max-width: 100%; display: block; }
+
+        /* --- HEADER --- */
+        .nav-top {
+            background: rgba(15, 15, 20, 0.95); border-bottom: var(--border);
+            padding: 15px 20px; position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(10px);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo { font-size: 1.5rem; font-weight: 900; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .logo span { color: var(--accent); }
+        .home-btn { font-size: 0.9rem; color: #aaa; border: 1px solid #333; padding: 5px 15px; border-radius: 20px; display: flex; align-items: center; gap: 5px; }
+        .home-btn:hover { background: #333; color: #fff; }
+
+        /* --- HERO --- */
+        .kyc-hero {
+            text-align: center; padding: 50px 20px;
+            background: linear-gradient(180deg, rgba(41, 121, 255, 0.05) 0%, transparent 100%);
+            border-bottom: 1px solid #333;
+        }
+        .hero-icon { font-size: 4rem; color: var(--accent); margin-bottom: 20px; animation: scan 3s infinite ease-in-out; }
+        @keyframes scan { 0% { opacity: 0.7; transform: scale(1); } 50% { opacity: 1; transform: scale(1.1); text-shadow: 0 0 20px var(--accent); } 100% { opacity: 0.7; transform: scale(1); } }
+        h1 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; }
+        .subtitle { color: #aaa; max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 1.6; }
+
+        /* --- DOCS GRID --- */
+        .docs-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px; margin-top: 40px;
+        }
+        .doc-card {
+            background: var(--card-bg); border: var(--border); border-radius: 15px;
+            padding: 25px; transition: 0.3s; position: relative; overflow: hidden;
+            border-top: 4px solid var(--accent);
+        }
+        .doc-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(41, 121, 255, 0.15); }
+        .d-icon { font-size: 2rem; margin-bottom: 15px; color: var(--accent); }
+        .d-title { font-weight: bold; font-size: 1.1rem; margin-bottom: 10px; color: #fff; }
+        .d-desc { font-size: 0.9rem; color: #aaa; line-height: 1.6; }
+
+        /* --- INFO BOXES --- */
+        .info-box {
+            background: #111; padding: 30px; border-radius: 15px; border: 1px solid #222; margin-bottom: 30px;
+        }
+        .info-box h2 { color: var(--primary); margin-top: 0; display: flex; align-items: center; gap: 10px; }
+        .info-box p { color: #ccc; line-height: 1.8; text-align: justify; }
+        
+        .req-list { list-style: none; padding: 0; }
+        .req-list li { background: #16161a; padding: 12px; margin-bottom: 8px; border-radius: 8px; font-size: 0.95rem; color: #ddd; display: flex; gap: 10px; align-items: center; border-right: 3px solid var(--primary); }
+        .req-list li i { color: var(--primary); }
+
+        .forbid-list li { border-color: var(--danger); }
+        .forbid-list li i { color: var(--danger); }
+
+        /* --- APP CTA (Verification Trap) --- */
+        .app-cta {
+            background: linear-gradient(90deg, #0d1f16, #000); border: 1px dashed var(--success);
+            padding: 25px; border-radius: 15px; margin: 30px 0; text-align: center;
+        }
+        .cta-btn {
+            background: var(--success); color: #000; padding: 10px 30px; border-radius: 30px;
+            font-weight: 800; font-size: 0.9rem; margin-top: 15px; display: inline-block; cursor: pointer;
+            transition: 0.3s; text-decoration: none;
+        }
+        .cta-btn:hover { transform: scale(1.05); box-shadow: 0 0 15px rgba(0, 230, 118, 0.4); }
+
+        /* --- PROMO (Trust Badge) --- */
+        .promo-box {
+            background: linear-gradient(135deg, #1a1500, #000); border: 1px solid var(--warning);
+            padding: 20px; border-radius: 15px; margin-top: 20px; text-align: center;
+        }
+        .code-pill { background: #333; color: var(--warning); padding: 5px 15px; border-radius: 5px; font-family: monospace; font-size: 1.2rem; display: inline-block; margin: 10px 0; border: 1px dashed var(--warning); }
+
+        /* --- SEO FOOTER --- */
+        .seo-footer { background: #050505; border-top: 1px solid #222; padding: 40px 20px; margin-top: 60px; }
+        .kw-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .kw-tag { font-size: 0.8rem; color: #666; background: #1a1a20; padding: 5px 10px; border-radius: 5px; border: 1px solid #222; }
+
+        /* --- STICKY BAR --- */
+        .sticky-bar {
+            position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%);
+            width: 95%; max-width: 500px; background: rgba(20, 20, 25, 0.95);
+            backdrop-filter: blur(15px); padding: 8px; border-radius: 50px;
+            display: flex; gap: 8px; border: 1px solid rgba(255,255,255,0.15);
+            z-index: 9999; box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+        }
+        .f-btn {
+            flex: 1; height: 45px; border-radius: 25px; font-weight: 700; font-size: 0.9rem;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            cursor: pointer; border: none; color: #fff; transition: 0.2s;
+        }
+        .btn-dl { background: var(--success); color: #000; }
+        .btn-reg { background: var(--accent); }
+        .btn-copy { background: #222; border: 1px solid #444; color: var(--warning); max-width: 100px; }
+
+    </style>
+</head>
+<body>
+
+    <nav class="nav-top">
+        <div class="logo">MEGA<span>PARI</span> <span style="font-size:0.8rem; color:#aaa; margin-right:5px;">KYC</span></div>
+        <a href="index.html" class="home-btn"><i class="fa-solid fa-house"></i> الرئيسية</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="kyc-hero">
+            <i class="fa-solid fa-id-card hero-icon"></i>
+            <h1>سياسة التوثيق ومكافحة غسيل الأموال</h1>
+            <p class="subtitle">التوثيق (KYC) هو خط الأمان الأول لحسابك. تعرف على المستندات المطلوبة لتفعيل السحب الفوري وتجنب تجميد الأموال.</p>
+        </div>
+
+        <div class="app-cta">
+            <i class="fa-solid fa-camera" style="font-size:2rem; color:var(--success); margin-bottom:10px;"></i>
+            <h3 style="margin:0; color:#fff;">وثق حسابك في ثوانٍ عبر التطبيق</h3>
+            <p style="color:#aaa; font-size:0.9rem;">استخدم كاميرا التطبيق لرفع المستندات مباشرة وبدون تعقيد. الأولوية لمستخدمي التطبيق في المراجعة.</p>
+            <a href="MEGAPARI_App_Download.html" class="cta-btn">تحميل التطبيق وتوثيق الحساب</a>
+        </div>
+
+        <div class="info-box">
+            <h2><i class="fa-solid fa-check-double"></i> متطلبات التحقق من الهوية (KYC)</h2>
+            <p>يتعين على كل مستخدم جديد إتمام توثيق الهوية كجزء من إجراءات التسجيل والامتثال الدولية. المستندات المقبولة في مصر:</p>
+            
+            <div class="docs-grid" style="margin-top:20px;">
+                <div class="doc-card">
+                    <i class="fa-solid fa-address-card d-icon"></i>
+                    <div class="d-title">إثبات الهوية</div>
+                    <div class="d-desc">صورة واضحة من بطاقة الرقم القومي (وجه وظهر) أو جواز سفر ساري المفعول.</div>
+                </div>
+                <div class="doc-card">
+                    <i class="fa-solid fa-map-location-dot d-icon"></i>
+                    <div class="d-title">إثبات العنوان</div>
+                    <div class="d-desc">فاتورة مرافق (كهرباء، غاز، إنترنت) حديثة لا يتجاوز عمرها 3 أشهر، تحمل اسمك وعنوانك.</div>
+                </div>
+                <div class="doc-card">
+                    <i class="fa-solid fa-money-check-dollar d-icon"></i>
+                    <div class="d-title">ملكية وسيلة الدفع</div>
+                    <div class="d-desc">لقطة شاشة (Screenshot) من محفظة فودافون كاش أو إنستا باي تظهر رقمك واسمك بوضوح.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h2 style="color:var(--danger);"><i class="fa-solid fa-shield-halved"></i> تدابير مكافحة غسيل الأموال (AML)</h2>
+            <p>تلتزم MegaPari بتطبيق إجراءات صارمة لمنع استخدام المنصة في أي أنشطة مالية غير مشروعة. نقوم بمراقبة المعاملات بشكل دوري:</p>
+            
+            <ul class="req-list">
+                <li><i class="fa-solid fa-magnifying-glass"></i> <strong>مراقبة المعاملات:</strong> نظام آلي يحلل أنماط الإيداع والسحب للكشف عن أي نشاط مريب.</li>
+                <li><i class="fa-solid fa-user-check"></i> <strong>فحص القوائم:</strong> مطابقة بيانات المستخدمين مع القوائم الدولية للأشخاص المحظورين (PEP).</li>
+                <li><i class="fa-solid fa-file-invoice-dollar"></i> <strong>مصدر الأموال:</strong> في حالات الإيداع الضخمة، قد يُطلب إثبات مصدر الدخل (Source of Wealth).</li>
+            </ul>
+        </div>
+
+        <div class="info-box" style="border-color:var(--danger);">
+            <h2 style="color:var(--danger);"><i class="fa-solid fa-ban"></i> أنشطة محظورة (تؤدي للحظر)</h2>
+            <p>حفاظاً على نزاهة اللعب، يتم حظر الحسابات التي تقوم بالأفعال التالية فوراً وبدون إنذار:</p>
+            <ul class="req-list forbid-list">
+                <li><i class="fa-solid fa-xmark"></i> <strong>تعدد الحسابات (Multi-Accounting):</strong> امتلاك أكثر من حساب لنفس الشخص أو من نفس عنوان IP للحصول على البونص مرتين.</li>
+                <li><i class="fa-solid fa-xmark"></i> <strong>استخدام مستندات مزورة:</strong> أي تعديل ببرامج "الفوتوشوب" على الهوية يؤدي للحظر المؤبد ومصادرة الرصيد.</li>
+                <li><i class="fa-solid fa-xmark"></i> <strong>تبييض الأموال:</strong> الإيداع ثم السحب فوراً بدون اللعب أو المراهنة بجزء من المبلغ (يجب تدوير الإيداع مرة واحدة على الأقل).</li>
+                <li><i class="fa-solid fa-xmark"></i> <strong>الوساطة:</strong> استخدام بطاقة ائتمان أو محفظة لا تخص صاحب الحساب.</li>
+            </ul>
+        </div>
+
+        <div class="promo-box">
+            <h3 style="margin:0; color:#fff;">كيف تضمن توثيق حسابك بسرعة؟</h3>
+            <p style="color:#aaa; font-size:0.9rem;">الحسابات المسجلة عبر كود الوكالة الرسمي تتمتع بصفة "موثوقة" ويتم مراجعة مستنداتها في وقت أسرع.</p>
+            <div class="code-pill">EGPARI</div>
+            <br>
+            <button onclick="navigator.clipboard.writeText('EGPARI');alert('تم نسخ الكود!');" class="cta-btn" style="background:#333; color:var(--warning); border:1px solid var(--warning); margin-top:10px;">نسخ كود التوثيق السريع</button>
+        </div>
+
+        <div class="info-box">
+            <h2>❓ أسئلة شائعة حول التوثيق</h2>
+            <div style="margin-top:15px;">
+                <strong style="color:#fff;">كم يستغرق التوثيق؟</strong>
+                <p style="margin:5px 0 15px; font-size:0.9rem;">عادة ما تستغرق المراجعة من 24 إلى 48 ساعة عمل. في حال استخدام التطبيق، قد تكون أسرع.</p>
+                
+                <strong style="color:#fff;">هل بياناتي آمنة؟</strong>
+                <p style="margin:5px 0 15px; font-size:0.9rem;">نعم، جميع المستندات تخزن في سيرفرات مشفرة ومنفصلة عن سيرفرات اللعب، ولا يتم مشاركتها مع أي طرف ثالث.</p>
+                
+                <strong style="color:#fff;">هل التوثيق إجباري؟</strong>
+                <p style="margin:5px 0 0; font-size:0.9rem;">ليس إجبارياً للإيداع واللعب بمبالغ صغيرة، ولكنه إجباري عند طلب أول سحب كبير.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="seo-footer">
+        <div class="container">
+            <h4 style="color:#fff;">كلمات بحث ذات صلة:</h4>
+            <div class="kw-tags">
+                <span class="kw-tag">مشكلة التوثيق في 1xbet</span> <span class="kw-tag">رفض الهوية</span> <span class="kw-tag">تأكيد الحساب</span> <span class="kw-tag">حل مشكلة تعدد الحسابات</span> <span class="kw-tag">رفع المستندات</span> <span class="kw-tag">التحقق من العنوان</span> <span class="kw-tag">aml policy</span> <span class="kw-tag">kyc verification egypt</span> <span class="kw-tag">security department email</span> <span class="kw-tag">سحب الارباح المعلقة</span>
+            </div>
+            <p style="text-align:center; color:#666; margin-top:30px; font-size:0.8rem;">© 2026 MEGAPARI Security & Compliance Dept.</p>
+        </div>
+    </div>
+
+    <div class="sticky-bar">
+        <a href="MEGAPARI_App_Download.html" class="f-btn btn-dl">
+            <i class="fa-brands fa-android"></i> التطبيق
+        </a>
+        <a href="https://refpazitag.top/L?tag=d_2539807m_93399c_EGPARI&site=2539807&ad=93399&r=Registration" class="f-btn btn-reg">
+            <i class="fa-solid fa-user-plus"></i> تسجيل
+        </a>
+        <button onclick="navigator.clipboard.writeText('EGPARI');alert('تم نسخ الكود!');" class="f-btn btn-copy">
+            EGPARI
+        </button>
+    </div>
+
+</body>
+</html>

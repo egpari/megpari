@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#0f0f12">
+    
+    <title>سياسة الخصوصية والأمان | Megapari Egypt | حماية بياناتك وأموالك</title>
+    <meta name="description" content="تعرف على كيفية حماية Megapari لبياناتك الشخصية والمالية. سياسة التشفير، ملفات تعريف الارتباط، وحقوق المستخدم. العب بأمان وخصوصية تامة.">
+    <meta name="keywords" content="سياسة الخصوصية megapari, هل 1xbet آمن, حماية البيانات, تشفير المعلومات, مسح بيانات الحساب, ملفات تعريف الارتباط, خصوصية المراهنات, تأمين الحساب, Megapari safety">
+
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #00f0ff;       /* Cyber Blue for Security */
+            --accent: #ff0055;
+            --success: #00e676;
+            --gold: #ffd700;
+            --bg-dark: #0a0a0c;
+            --card-bg: #141418;
+            --border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        * { box-sizing: border-box; outline: none; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            background-color: var(--bg-dark);
+            color: #fff;
+            font-family: 'Tajawal', sans-serif;
+            margin: 0; padding: 0;
+            padding-bottom: 100px;
+            background-image: radial-gradient(circle at 50% 0%, #05101a 0%, #000 100%);
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        img { max-width: 100%; display: block; }
+
+        /* --- HEADER --- */
+        .nav-top {
+            background: rgba(15, 15, 20, 0.95); border-bottom: var(--border);
+            padding: 15px 20px; position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(10px);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo { font-size: 1.5rem; font-weight: 900; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .logo span { color: var(--primary); }
+        .home-btn { font-size: 0.9rem; color: #aaa; border: 1px solid #333; padding: 5px 15px; border-radius: 20px; display: flex; align-items: center; gap: 5px; }
+        .home-btn:hover { background: #333; color: #fff; }
+
+        /* --- HERO --- */
+        .privacy-hero {
+            text-align: center; padding: 50px 20px;
+            background: linear-gradient(180deg, rgba(0, 240, 255, 0.05) 0%, transparent 100%);
+            border-bottom: 1px solid #333;
+        }
+        .hero-icon { font-size: 4rem; color: var(--primary); margin-bottom: 20px; animation: shield-pulse 3s infinite; text-shadow: 0 0 30px var(--primary); }
+        @keyframes shield-pulse { 0% { opacity: 0.8; transform: scale(1); } 50% { opacity: 1; transform: scale(1.1); } 100% { opacity: 0.8; transform: scale(1); } }
+        h1 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; }
+        .subtitle { color: #aaa; max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 1.6; }
+
+        /* --- CONTENT CARDS --- */
+        .policy-section { margin-top: 40px; }
+        .policy-card {
+            background: #111; padding: 30px; border-radius: 20px; border: 1px solid #222; margin-bottom: 30px;
+            position: relative; overflow: hidden;
+        }
+        .policy-card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--primary); }
+        
+        .policy-card h2 { color: var(--primary); font-size: 1.6rem; margin-top: 0; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+        .policy-card h3 { color: #fff; font-size: 1.2rem; margin: 25px 0 10px; border-bottom: 1px dashed #333; padding-bottom: 5px; display: inline-block; }
+        .policy-card p { color: #ccc; line-height: 1.9; font-size: 1rem; text-align: justify; margin-bottom: 15px; }
+
+        /* --- LIST STYLES --- */
+        .data-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
+        .data-list li { background: #16161a; padding: 15px; border-radius: 10px; border: 1px solid #333; color: #ddd; font-size: 0.95rem; }
+        .data-list li strong { color: #fff; display: block; margin-bottom: 5px; }
+        .data-list li i { color: var(--primary); margin-left: 5px; }
+
+        .check-list { list-style: none; padding: 0; }
+        .check-list li { margin-bottom: 10px; color: #ccc; position: relative; padding-right: 25px; }
+        .check-list li::before { content: '🔒'; position: absolute; right: 0; font-size: 0.9rem; }
+
+        /* --- CONVERSION TRAPS (CTA) --- */
+        .secure-cta {
+            background: linear-gradient(135deg, #051a24, #000); border: 1px dashed var(--primary);
+            padding: 25px; border-radius: 15px; margin: 30px 0; text-align: center;
+        }
+        .secure-btn {
+            background: var(--primary); color: #000; padding: 10px 30px; border-radius: 30px;
+            font-weight: 800; font-size: 0.95rem; margin-top: 15px; display: inline-block; cursor: pointer;
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.3); transition: 0.3s;
+        }
+        .secure-btn:hover { transform: scale(1.05); box-shadow: 0 0 25px rgba(0, 240, 255, 0.5); }
+
+        .gold-cta {
+            background: linear-gradient(135deg, #1a1500, #000); border: 1px solid var(--gold);
+            padding: 20px; border-radius: 15px; margin-top: 20px; text-align: center;
+        }
+        .gold-btn {
+            background: var(--gold); color: #000; padding: 8px 25px; border-radius: 20px;
+            font-weight: bold; margin-top: 10px; display: inline-block; cursor: pointer;
+        }
+
+        /* --- KEYWORDS SECTION --- */
+        .kw-section { margin-top: 20px; padding: 15px; background: #0f0f12; border-radius: 10px; border: 1px dashed #333; }
+        .kw-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .kw-tag { font-size: 0.75rem; color: #666; background: #1a1a20; padding: 4px 10px; border-radius: 5px; border: 1px solid #222; }
+
+        /* --- SEO FOOTER --- */
+        .seo-footer { background: #050505; border-top: 1px solid #222; padding: 40px 20px; margin-top: 60px; }
+        
+        /* --- STICKY BAR --- */
+        .sticky-bar {
+            position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%);
+            width: 95%; max-width: 500px; background: rgba(20, 20, 25, 0.95);
+            backdrop-filter: blur(15px); padding: 8px; border-radius: 50px;
+            display: flex; gap: 8px; border: 1px solid rgba(255,255,255,0.15);
+            z-index: 9999; box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+        }
+        .f-btn {
+            flex: 1; height: 45px; border-radius: 25px; font-weight: 700; font-size: 0.9rem;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            cursor: pointer; border: none; color: #fff; transition: 0.2s;
+        }
+        .btn-dl { background: var(--success); color: #000; }
+        .btn-reg { background: var(--accent); }
+        .btn-copy { background: #222; border: 1px solid #444; color: var(--gold); max-width: 100px; }
+
+    </style>
+</head>
+<body>
+
+    <nav class="nav-top">
+        <div class="logo">
+            <img src="https://megapari.games/eg/wp-content/uploads/sites/63/2023/05/logo.svg" height="30" alt="Logo">
+            <span style="color:var(--primary); margin-right:5px; font-size:0.8rem;">PRIVACY</span>
+        </div>
+        <a href="index.html" class="home-btn"><i class="fa-solid fa-house"></i> الرئيسية</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="privacy-hero">
+            <i class="fa-solid fa-user-shield hero-icon"></i>
+            <h1>سياسة الخصوصية وحماية البيانات</h1>
+            <p class="subtitle">نحن نلتزم بأعلى معايير التشفير العالمية (SSL) لحماية بياناتك الشخصية وأموالك. خصوصيتك هي أولويتنا القصوى.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2><i class="fa-solid fa-database"></i> ما هي البيانات التي نجمعها؟</h2>
+            <p>لتقديم خدمة آمنة وقانونية، ولضمان عدم تعرض حسابك للسرقة، نقوم بجمع البيانات التالية:</p>
+            
+            <ul class="data-list">
+                <li><i class="fa-solid fa-address-card"></i> <strong>بيانات الهوية:</strong> الاسم الكامل، تاريخ الميلاد (للتأكد من السن القانوني +18).</li>
+                <li><i class="fa-solid fa-phone"></i> <strong>بيانات الاتصال:</strong> رقم الهاتف والبريد الإلكتروني (لاسترجاع الحساب وحمايته).</li>
+                <li><i class="fa-solid fa-money-bill-transfer"></i> <strong>بيانات مالية:</strong> سجل الإيداع والسحب (لحل مشاكل المدفوعات). نحن لا نخزن أرقام البطاقات البنكية كاملة.</li>
+                <li><i class="fa-solid fa-laptop-code"></i> <strong>بيانات تقنية:</strong> عنوان IP ونوع الجهاز (لمنع الدخول غير المصرح به).</li>
+            </ul>
+
+            <div class="secure-cta">
+                <i class="fa-solid fa-lock" style="font-size:2rem; color:var(--primary); margin-bottom:10px;"></i>
+                <h3 style="margin:0; color:#fff;">لضمان أقصى درجات الخصوصية</h3>
+                <p style="color:#aaa;">تطبيق Megapari يوفر اتصالاً مشفراً (End-to-End Encryption) يمنع أي طرف ثالث من التجسس على بياناتك.</p>
+                <a href="MEGAPARI_App_Download.html" class="secure-btn">تحميل التطبيق المشفر (APK)</a>
+            </div>
+        </div>
+
+        <div class="policy-card">
+            <h2><i class="fa-solid fa-server"></i> كيف نستخدم بياناتك؟</h2>
+            <p>نحن لا نبيع بياناتك لأي طرف ثالث. تُستخدم المعلومات حصراً للأغراض التالية:</p>
+            <ul class="check-list">
+                <li>تشغيل الحساب وتمكينك من وضع الرهانات وسحب الأرباح.</li>
+                <li>التحقق من الهوية (KYC) لمنع الاحتيال وغسيل الأموال.</li>
+                <li>حماية حسابك من الاختراق (إرسال كود التحقق SMS).</li>
+                <li>تحسين جودة الخدمة وحل المشاكل التقنية.</li>
+            </ul>
+        </div>
+
+        <div class="policy-card">
+            <h2><i class="fa-solid fa-cookie-bite"></i> ملفات تعريف الارتباط (Cookies)</h2>
+            <p>نستخدم ملفات تعريف الارتباط لتحسين تجربتك، مثل تذكر لغتك المفضلة وإبقائك مسجلاً للدخول. يمكنك التحكم في هذه الملفات من إعدادات المتصفح، ولكن إيقافها قد يؤثر على عمل الموقع.</p>
+            
+            <div class="gold-cta">
+                <h3 style="margin:0; color:var(--gold);">نصيحة للمحترفين:</h3>
+                <p style="color:#ccc;">للحصول على حساب "خفي" وغير قابل للتتبع من قبل شركات الاتصالات، قم بالتسجيل باستخدام كود الوكالة الرسمي.</p>
+                <div style="margin-top:10px; font-family:monospace; font-size:1.5rem; background:#333; display:inline-block; padding:5px 20px; border-radius:5px; color:#fff;">EGPARI</div>
+                <br>
+                <a href="https://refpazitag.top/L?tag=d_2539807m_93399c_EGPARI&site=2539807&ad=93399&r=Registration" class="gold-btn">تسجيل حساب آمن الآن</a>
+            </div>
+        </div>
+
+        <div class="policy-card">
+            <h2><i class="fa-solid fa-scale-balanced"></i> حقوق المستخدم (أنت تتحكم)</h2>
+            <p>بموجب قوانين حماية البيانات، لديك الحقوق التالية:</p>
+            <ul class="check-list">
+                <li><strong>حق الوصول:</strong> يمكنك طلب نسخة من جميع بياناتك المسجلة لدينا.</li>
+                <li><strong>حق التصحيح:</strong> يمكنك تعديل بياناتك الشخصية من إعدادات الحساب في أي وقت.</li>
+                <li><strong>حق النسيان (الحذف):</strong> يمكنك طلب حذف حسابك وبياناتك نهائياً من خلال التواصل مع الدعم الفني، بشرط عدم وجود ديون أو قضايا احتيال معلقة.</li>
+            </ul>
+            
+            <div class="kw-section">
+                <h5>كلمات بحث شائعة:</h5>
+                <div class="kw-tags">
+                    <span class="kw-tag">حذف حساب megapari</span> <span class="kw-tag">هل 1xbet يسرق البيانات</span> <span class="kw-tag">تأمين الحساب</span> <span class="kw-tag">توثيق الهوية</span> <span class="kw-tag">خصوصية المراهنات</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:40px; color:#666; font-size:0.85rem;">
+            <p>إخلاء مسؤولية: قد يحتوي الموقع على روابط خارجية. نحن غير مسؤولين عن سياسات الخصوصية للمواقع الأخرى.<br>
+            يخضع استخدامك للموقع لقبولك لهذه السياسة. آخر تحديث: فبراير 2026.</p>
+        </div>
+
+    </div>
+
+    <div class="seo-footer">
+        <div class="container">
+            <h4 style="color:#fff;">حماية وأمان:</h4>
+            <div class="kw-tags">
+                <span class="kw-tag">تشفير SSL</span> <span class="kw-tag">حماية 1xbet</span> <span class="kw-tag">مصداقية megapari</span> <span class="kw-tag">هل الموقع مراقب</span> <span class="kw-tag">بيانات الفيزا</span> <span class="kw-tag">سرقة الحسابات</span> <span class="kw-tag">استعادة الاموال</span> <span class="kw-tag">gdpr compliance</span> <span class="kw-tag">data protection</span>
+            </div>
+            <p style="text-align:center; color:#444; margin-top:30px; font-size:0.8rem;">© 2026 MEGAPARI Data Protection Officer.</p>
+        </div>
+    </div>
+
+    <div class="sticky-bar">
+        <a href="MEGAPARI_App_Download.html" class="f-btn btn-dl">
+            <i class="fa-brands fa-android"></i> التطبيق
+        </a>
+        <a href="https://refpazitag.top/L?tag=d_2539807m_93399c_EGPARI&site=2539807&ad=93399&r=Registration" class="f-btn btn-reg">
+            <i class="fa-solid fa-user-plus"></i> تسجيل
+        </a>
+        <button onclick="navigator.clipboard.writeText('EGPARI');alert('تم نسخ الكود!');" class="f-btn btn-copy">
+            EGPARI
+        </button>
+    </div>
+
+</body>
+</html>
